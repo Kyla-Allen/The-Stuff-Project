@@ -1,6 +1,6 @@
 package model;
 
-public class Skills {
+public class Skill {
 
 	//VARIABLES----------------------------------------------
 	private String name;

@@ -7,4 +7,9 @@ public class OverallUse {
 	public void print(String message){
 		System.out.println(message);
 	}
+
+	//Simple random number generator
+	public int rng(){
+		return (int) (Math.random() * 5) + 1;
+	}
 }

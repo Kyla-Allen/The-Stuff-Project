@@ -1,10 +1,13 @@
 package model;
 
+import java.util.HashMap;
+
 public class Actor {
 
 	//PROPERTIES------------------------------------------------------------------
 	private String NAME;
 	private String DESCRIPTION;
+	private HashMap[] skills;
 
 	//CHOOSE YOUR SIDE DUH DUH DUUUUHHHH
 	public enum Align{PROTAG, ANTAG}
@@ -20,6 +23,7 @@ public class Actor {
 	private boolean active;
 
 	//CONSTRUCTOR-----------------------------------------------------------------
+	//TODO: Make a skills list a parameter
 	public Actor(String name, String desc,int hp, int atk, int def, int will, Align side){
 		this.NAME = name;
 		this.DESCRIPTION = desc;
