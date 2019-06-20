@@ -1,21 +1,25 @@
 # The-Stuff-Project
 A build-upon-build-upon project I use to just code. Something of a Text-Based RPG-game.
 
-=========================================================
+<p>=========================================================</p>
 
-CURRENT STAGE: One!
+<p> <strong>CURRENT STAGE:</strong> One!</p>
 
-=========================================================
-STAGES:
+<p>=========================================================</p>
+<p>
+  STAGES:
 
-[COMMAND-LINE ONLY STAGES]
-One - Basic Battle System
-Two - Basic Dialouge/Interactions
-Three - Basic Travelling
+  <ul>
+    <li><strong>[COMMAND-LINE ONLY STAGES]</strong></li>
+    <li> <strong>One - Basic Battle System</strong></li>
+    <li>Two - Basic Dialouge/Interactions</li>
+    <li>Three - Basic Travelling</li>
+    <li></li>
+    <li>Four - Refine Battle</li>
+    <li>Five - Refine Interactions</li>
+    <li>Six - Refine Travel</li>
+  </ul> 
+</p>
 
-Four - Refine Battle
-Five - Refine Interactions
-Six - Refine Travel
-
-=========================================================
-That's all I have written out right now. ¯\_(ツ)_/¯
+<p>=========================================================</p>
+<p>That's all I have written out right now. ¯\_(ツ)_/¯</p>
