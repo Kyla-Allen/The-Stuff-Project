@@ -6,6 +6,10 @@ public class Actor {
 	private String NAME;
 	private String DESCRIPTION;
 
+	//CHOOSE YOUR SIDE DUH DUH DUUUUHHHH
+	public enum Align{PROTAG, ANTAG}
+	private Align side;
+
 	//Stats------------------------------
 	private int HP;
 	private int currentHP;
@@ -16,7 +20,7 @@ public class Actor {
 	private boolean active;
 
 	//CONSTRUCTOR-----------------------------------------------------------------
-	public Actor(String name, String desc,int hp, int atk, int def, int will){
+	public Actor(String name, String desc,int hp, int atk, int def, int will, Align side){
 		this.NAME = name;
 		this.DESCRIPTION = desc;
 		this.HP = hp;
@@ -26,6 +30,7 @@ public class Actor {
 		this.will = will;
 		this.currentWill = will;
 		active = true;
+		this.setSide(side);
 	}
 
 	//METHODS---------------------------------------------------------------------
@@ -102,6 +107,14 @@ public class Actor {
 	}
 	public void setActive(boolean active) {
 		this.active = active;
+	}
+
+	//Alignment
+	public Align getSide() {
+		return this.side;
+	}
+	public void setSide(Align side) {
+		this.side = side;
 	}
 
 }

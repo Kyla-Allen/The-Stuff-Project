@@ -2,9 +2,9 @@ package model;
 
 public class BattleBasics extends Actor{
 
-	//CONSTRUCTOR
-	public BattleBasics(String name, String desc, int hp, int atk, int def, int will) {
-		super(name, desc, hp, atk, def, will);
+	//CONSTRUCTOR-----------------------------------------
+	public BattleBasics(String name, String desc, int hp, int atk, int def, int will, Align side) {
+		super(name, desc, hp, atk, def, will, side);
 	}
 
 	/*Method: getHurt
@@ -56,4 +56,5 @@ public class BattleBasics extends Actor{
 	public void die (boolean active){
 		this.setActive(false);
 	}
+
 }
