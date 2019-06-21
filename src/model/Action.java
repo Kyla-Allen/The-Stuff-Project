@@ -23,14 +23,14 @@ public class Action {
 	} //End of Choice
 
 	//Shows the enemy's description
-	public void check(Actor actor){
+	private void check(Actor actor){
 		use.print(actor.getDesc());
 	} //End of Check
 
 	//Pulls up the available skills
-	public void fight(Actor actor){
-		for (Skill skill: actor.getSkills()){
-
-		}
+	private void fight(Actor actor){
+//		for (Skill skill: actor.getSkills()){
+//
+//		}
 	}
 }
