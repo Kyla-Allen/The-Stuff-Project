@@ -1,14 +1,14 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Actor{
 
 	//PROPERTIES------------------------------------------------------------------
 	private String NAME;
 	private String DESCRIPTION;
-	ArrayList<Skill> skills = new ArrayList<Skill>();
+	private ArrayList<Skill> skills = new ArrayList<Skill>();
+	private ArrayList<Item> items = new ArrayList<Item>();
 
 	//CHOOSE YOUR SIDE DUH DUH DUUUUHHHH
 	public enum Align{PROTAG, ANTAG}
@@ -122,6 +122,27 @@ public class Actor{
 		this.side = side;
 	}
 
+	//Skills
+	public ArrayList<Skill> getSkills(){
+		return this.skills;
+	}
+	public void setSkills(ArrayList<Skill> skills){
+		this.skills = skills;
+	}
+	public void addSkill(Skill skill){
+		this.skills.add(skill);
+	}
+
+	//Item
+	public ArrayList<Item> getItems(){
+		return this.items;
+	}
+	public void setItems(ArrayList<Item> items){
+		this.items = items;
+	}
+	public void addItem(Item item){
+		this.items.add(item);
+	}
 
 	//BATTLE METHODS------------------------------------------------------------------------------
 
