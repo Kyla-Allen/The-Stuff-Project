@@ -146,25 +146,6 @@ public class Actor{
 
 	//BATTLE METHODS------------------------------------------------------------------------------
 
-	/*Method: getHurt
-	 * The point of this method is to apply damage done to the enemy.
-	 *
-	 * Parameters:
-	 * curHealth = the initial health of the actor
-	 * enemyDef = the defense of the actor
-	 * attackerStrength = the attack power of the attacker
-	 *
-	 *Local Variables:
-	 *newHealth = the updated health of the actor being attacked
-	 *damage = the damage done
-	 *
-	 */
-	public void getHurt(int curHealth, int enemyDef, int attackerStrength){
-		int newHealth;
-		int damage = enemyDef - attackerStrength;
-		newHealth = curHealth - damage;
-		this.setCurrentHp(newHealth);
-	}
 
 	/*
 	 * Method: heal
@@ -191,9 +172,14 @@ public class Actor{
 		this.setCurrentHp(newHealth);
 	}
 
-	//This won't be used this stage.
-	public void die (boolean active){
-		this.setActive(false);
+	//Checks an Actor's hp and sets its active state to FALSE if hp is less than or equal to zero,
+	// and then returns the new active state
+	public boolean isAlive(){
+		if (this.currentHP <= 0){
+			this.active = false;
+			return false;
+		} else {
+			return true;
+		}
 	}
-
 }
