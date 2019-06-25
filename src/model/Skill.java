@@ -12,6 +12,7 @@ public class Skill{
 		this.setWPcost(WPcost);
 	}
 
+	public Skill (){}
 
 	//GETTER AND SETTERS--------------------------------------
 
@@ -35,13 +36,10 @@ public class Skill{
 
 	//Normal Attack
 	public void hit(Actor hurtee, Actor attacker){
-		hurtee.getHurt(hurtee.getCurrentHp(), hurtee.getDef(), attacker.getAtk());
-	}
-
-	//Strong Attack
-	public void strongHit(Actor hurtee, Actor attacker){
-		int attackPwr = attacker.getAtk() * 2;
-		hurtee.getHurt(hurtee.getCurrentHp(), hurtee.getDef(), attackPwr);
+		int newHealth;
+		int damage = attacker.getAtk() - hurtee.getDef();
+		newHealth = hurtee.getCurrentHp() - damage;
+		hurtee.setCurrentHp(newHealth);
 	}
 
 	//Heal Method

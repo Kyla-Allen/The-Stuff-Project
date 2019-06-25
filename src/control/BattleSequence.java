@@ -39,9 +39,10 @@ public class BattleSequence {
 
 
 	//MAIN--------------------------------------------------------
-	public static void main(String[] args) {
-
-		//INSERT BATTLE STAGE TO RUN HERE
-	}//END OF MAIN
+//	public static void main(String[] args) {
+//
+//		//INSERT BATTLE STAGE TO RUN HERE
+//
+//	}//END OF MAIN
 
 }
