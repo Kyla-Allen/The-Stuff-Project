@@ -13,7 +13,7 @@ public class BattleSequence {
 	//OBJECTS AND SUCH--------------------------------------------
 	static OverallUse use = new OverallUse();
 	static Actor player = new Actor("Player", "You!", 200, 10, 10, 50, Align.PROTAG);
-	static Actor frog = new Actor("Frog", "Cute amphibian", 200, 5, 5, 30, Align.ANTAG );
+	static Actor frog = new Actor("Frog", "Cute amphibian", 200, 0, 5, 30, Align.ANTAG );
 	static Action action = new Action();
 
 	static Item herb = new Item("Herb", itemType.HEAL);
